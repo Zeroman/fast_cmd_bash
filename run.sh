@@ -195,7 +195,7 @@ cmd_help() { # Show all command.
 
 #######################################################
 
-cmd_test_1() { # t1-> test 1
+cmd_test_1() { # zz-> test 1
     echo "cmd_test_1"
 }
 
