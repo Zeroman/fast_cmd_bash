@@ -145,7 +145,7 @@ run_main() { # process command
         cmd_param=(${cmd_param[@]/pause/})
     fi
     cmd_name=${cmd_param[0]}
-    cmd_param=(${cmd_param[@]/$cmd_name/})
+    unset cmd_param[0]
 
     # echo "$cmd_param" "need wait" "$need_wait"
     _cmd=$(fuzzy_finder_cmd "$cmd_name")
@@ -195,7 +195,7 @@ cmd_help() { # Show all command.
 
 #######################################################
 
-cmd_test_1() { # zz-> test 1
+cmd_test_1() { # t1-> test 1
     echo "cmd_test_1"
 }
 
