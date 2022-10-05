@@ -1,7 +1,7 @@
 #!/bin/bash -
 
 cur_dir=$PWD
-cur_path=$(readlink -e $0)
+cur_path=$(readlink -f $0)
 cur_workdir=${cur_path%/*}
 cur_filename=$(basename "$cur_path")
 
